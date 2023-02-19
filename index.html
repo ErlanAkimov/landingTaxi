@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/icons/squares-title.png">
+
+    <!-- Шрифты (Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="popup-submit-form" id="popup-submit">
+        <div class="popup-overlay">        </div>
+           <div class="popup-card">  
+                <img src="./Images/icons/route.png" alt="route"> 
+                <div class="popup-title">   
+                    Заявка отправлена!  
+                </div>  
+   
+           </div>  
+
+    </div>
+
+    <div class="wrappers">
+        <div class="logo">Brand</div>
+        <button class="join" id="join">Подключиться</button>
+
+        <header class="header">
+            <div class="overlay"></div>
+            <div class="wrapper">
+                <div class="main-title">
+                    Подключайте свой таксопарк<br>к Яндекс Про
+                </div>
+                <div class="header-description">
+                    Работайте с заказами и вашими водителями<br> 
+                    с помощью Диспетчерской — удобной платформы для парка
+                </div>
+                <div class="btn-join">
+                    <button class="btn-join">Подключиться</button>
+                </div>
+            </div>
+
+            <div class="ticket"></div>
+        </header>
+
+        <div class="wrapper">
+
+            <div class="section-1">
+                <div class="titles section-1-title">Зачем сотрудничать с Яндекс Про</div>
+                <div class="description section-1-description">
+                    Наши технологии позволят вам получать больше поездок для ваших водителей<br>  
+                    и снизить время простоя. А мы поможем привлечь новых клиентов и водителей<br>
+                    рекламными и PR-кампаниями.
+                </div>
+            </div>
+
+
+            <div class="section-2">
+                <div class="titles section-2-title">Как мы помогаем<br> партнёрам развиваться</div>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./Images/icons/trafficlight.svg" alt="">
+                        <div class="card-text">
+                            Прогнозирование пробок и автоматическое распределение заказов помогают 
+                            снизить холостой пробег и простой такси.
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="./Images/icons/navigator.svg" alt="">
+                        <div class="card-text">
+                            Приложение Яндекс Про помогает вашим водителям работать эффективнее: 
+                            прокладывает маршрут, предлагает заказы по цепочке и по пути.
+                        </div>
+    
+                    </div>
+    
+                    <div class="card">
+                        <img src="./Images/icons/map.svg" alt="">
+                        <div class="card-text">
+                            Заказы могут размещать не только физические, но и юридические лица — 
+                            так поездок может быть больше.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="large-cards">
+                    <div class="large-card">
+                        <img src="./Images/icons/sale.svg" alt="">
+                        <div class="card-text">
+                            Для партнёров у нас есть специальная программа со скидками от лизинговых 
+                            и страховых компаний.
+                        </div>
+                    </div>    
+                    <div class="large-card">
+                        <img src="./Images/icons/bolt.svg" alt="">
+                        <div class="card-text">
+                            Цены на поездки увеличиваются в часы пик, а система бонусов делает заказы ещё выгоднее.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section-3">
+                <form class="form" action="">
+                    <div class="titles form-title">
+                        Отправить заявку
+                    </div>
+    
+                    <div class="swiper">
+                        <span>Вы уже работаете с Яндекс.Такси?</span>
+                        <input type="checkbox" id="check">
+                    </div>
+    
+                    <div class="inputs" id="inputs">
+                        <p>  *  Это название увидят пассажиры</p>
+                        <input type="text" name="companyName" placeholder="Введите название компании" required>
+                        <input type="text" name="country" placeholder="Страна" required>
+                        <input type="text" name="city" placeholder="Город" required>
+                        <p>	Укажите номер договора сервиса в формате XXXXX/XX</p>
+                        <input type="text" name="contractNumber" placeholder="Номер договора" disabled class="contractInput">
+                        <p>	
+                            Укажите логин, который используете для входа в Диспетчерскую <br>
+                            (lk.taximeter.yandex.ru) в формате «таксопарк_мск/Директор»
+                        </p>
+                        <input type="text" name="login" placeholder="Логин от Диспетчерской" disabled class="loginInput">
+                    </div>  
+
+                    <input type="submit" class="submit-form" id="sendForm">  
+                               
+                </form>
+            </div>
+
+            <div class="section-4">
+                <div class="titles section-4-title">
+                    Ответы на вопросы
+                </div>
+
+                <div class="slider">
+                    <label>
+                        <div class="title-side">
+                            <h4>Что нужно чтобы стать таксопарком-партнером?</h4>
+                            <input type="checkbox" id="locker1" class="locker1">
+                            <img src="./Images/icons/rightalign.png" alt="open" class="ra" id="ra1">                      
+                        </div>
+                    </label>
+                    <p id="text1" class="text">
+                        Таксопарк может стать нашим партнёром только как юридическое лицо или ИП. Если у вас этого нет, вам 
+                        нужно будет его оформить. Для работы также понадобится расчётный счёт в банке. Вам нужно будет внести 
+                        на лицевой счёт таксопарка 90 000 рублей предоплаты по договору. Эту сумму можно будет вернуть при расторжении 
+                        договора, если вы не нарушили его условия.
+                    </p>
+                </div>
+
+                <div class="slider">
+                    <label>
+                        <div class="title-side">
+                            <h4>Обязательно ли возить пассажиров? А можно только посылки?</h4>
+                            <input type="checkbox" id="locker2" class="locker1">
+                            <img src="./Images/icons/rightalign.png" alt="open" class="ra" id="ra2">                      
+                        </div>
+                    </label>
+                    <p id="text2" class="text">
+                        Вы можете работать с нами и как таксопарк — то есть перевозить пассажиров и багаж, и как логистическая служба — 
+                        то есть доставлять только посылки. А можете делать и то, и другое. Для перевозок пассажиров и багажа легковым такси 
+                        вам необходимо получить разрешение на осуществление такой деятельности на каждое транспортное средство. Если у вас 
+                        есть вопросы о том, как работает доставка отправлений с сервисом, оставьте заявку — мы перезвоним и ответим на все 
+                        вопросы.
+                    </p>
+                </div>
+
+                <div class="slider">
+                    <label>
+                        <div class="title-side">
+                            <h4>Как происходит подключение?</h4>
+                            <input type="checkbox" id="locker3" class="locker1">
+                            <img src="./Images/icons/rightalign.png" alt="open" class="ra" id="ra3">                      
+                        </div>
+                    </label>
+                    <p id="text3" class="text">
+                        Оставьте заявку через форму на этом сайте. На всех этапах подключения вас будет сопровождать менеджер, которому 
+                        вы сможете задать вопросы. Для начала он позвонит вам и расскажет детали сотрудничества. Договор заключается 
+                        удалённо, ехать никуда не придётся. После заключения договора у вас появится доступ к Диспетчерской, где вы сможете 
+                        видеть работу ваших водителей, их заказы, отчётность.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="recents">
+                <p class="rec">ООО «Яндекс Такси» предоставляет услуги по доступу к сервису лицам, оказывающим услуги по перевозке пассажиров, 
+                на условиях yandex.ru/legal/taxi_offer/. При оказании услуг по перевозке пассажиров и багажа в качестве самозанятого 
+                необходимо иметь статус ИП. Подробнее о налоговых вычетах на nalog.ru/npd/help_self_employed/deduction/.</p>
+                <p class="copyrights">© 2021 Яндекс Такси</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
