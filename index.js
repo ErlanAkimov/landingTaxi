@@ -1,12 +1,15 @@
 window.addEventListener('scroll', () => {
     const yMark = window.scrollY
-    const logo = document.querySelector('.logo');
+    const logoWhite = document.querySelector('#logo-white');
+    const logoBlack = document.querySelector('#logo-black');
     const joinBtn = document.querySelector('.join')
 
     if (yMark > 470) {
-        logo.style.color = 'black';
+        logoWhite.style.display = 'none';
+        logoBlack.style.display = 'block';
     }   else if (yMark < 470)   {
-        logo.style.color = 'white';
+        logoWhite.style.display = 'block';
+        logoBlack.style.display = 'none';
     };
     
     if (yMark < 470) {

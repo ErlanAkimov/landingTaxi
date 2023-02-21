@@ -1,5 +1,15 @@
-@mixin montserrat {
-    font-family: 'Montserrat', sans-serif;
+// =========== Шрифты ==============\\\
+
+@font-face {
+    font-family: 'Colibri-Regular';
+    src: url('./fonts/Colibri\ Sans\ Regular.ttf');
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: 'Colibri-light';
+    src: url('./fonts/ColibriSanslight.ttf');
+    font-weight: light;
 }
 
 // =========== Variables ===========\\\
@@ -14,7 +24,7 @@ $screen-lg-max: 1999px;
 // =========== Variables =========== ///
 
 * {
-    @include montserrat;
+    font-family: Colibri-light;
     margin: 0;
     padding: 0;
 }
@@ -30,11 +40,20 @@ body {
     z-index: 9;
     position: fixed;
     cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 37px;
     margin-left: 30px;
     margin-top: 20px;
     transition: 0.5s;
+
+    .colibri-white {
+        width: 120px;
+        height: 50px;
+    }
+
+    .colibri-black {
+        width: 120px;
+        height: 50px;
+        display: none;;
+    }
 }
 
 .join {
@@ -51,17 +70,20 @@ body {
     border: none;
     background: transparent;
     border-radius: 11px;
-    background-color: rgb(236, 236, 25);
     width: 160px;
     height: 50px;
     transition: .5s ease-in-out;
+    font-family: Colibri-light;
+    font-weight: 800;
+    color: white;
+    background-color: #2682af;
 
     &:hover {
-        background-color: rgb(248, 248, 83);
+        background-color: #2B92C7;
     }
 
     &:active {
-        background-color: rgb(204, 204, 29);
+        background-color: #1e6f97;
     }
     
 }
@@ -103,36 +125,41 @@ body {
     }
 
     .main-title {
+        font-family: colibri-regular;
         padding: 120px 0 10px 0;
-        font-weight: 600;
+        font-weight: 800;
         font-size: 56px;
+        line-height: 60px;
     }
 
     .header-description {
         max-width: 500px;
         font-size: 19px;
         padding: 10px 0 50px 0;
-        line-height: 24px;
+        line-height: 27px;
+        font-weight: 600;
     }
 
     .btn-join {
         cursor: pointer;
-        font-size: 26px;
-        font-weight: 500;
+        font-size: 22px;
         border: none;
         background: transparent;
         border-radius: 19px;
-        background-color: rgb(236, 236, 25);
         width: 290px;
         height: 65px;
         transition: .2s ease-in-out;
+        font-family: Colibri-light;
+        font-weight: 800;
+        color: white;
 
+        background-color: #2682af;
         &:hover {
-            background-color: rgb(248, 248, 83);
+            background-color: #2B92C7;
         }
-
+    
         &:active {
-            background-color: rgb(204, 204, 29);
+            background-color: #1e6f97;
         }
     }
 
@@ -153,10 +180,13 @@ body {
 
     .section-1-title {
         margin-bottom: 50px;
+        font-weight: 800;
+        font-family: colibri-regular;
     }
 
     .section-1-description {
         line-height: 32px;
+        font-weight: 600;
     }
 }
 
@@ -165,6 +195,8 @@ body {
 
     .section-2-title {
         margin-bottom: 80px;
+        font-weight: 800;
+        font-family: colibri-regular;
     }
 }
 
@@ -191,7 +223,7 @@ body {
 
         .card-text {
             font-size: 19px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
     }
@@ -218,7 +250,7 @@ body {
 
         .card-text {
             font-size: 19px;
-            font-weight: 600;
+            font-weight: 800;
         }
     }
 }
@@ -227,6 +259,8 @@ body {
     .form-title {
         margin-top: 180px;
         margin-bottom: 80px;
+        font-weight: 800;
+        font-family: colibri-regular;
     }
 
     .swiper {
@@ -239,6 +273,7 @@ body {
             margin: 0;
             font-size: 18px;
             font-weight: 600;
+            font-family: colibri-regular;
             color: black;
         }
 
@@ -256,7 +291,7 @@ body {
         }
 
         input:checked[type="checkbox"] {
-            background: rgb(236, 236, 25);
+            background-color: #2B92C7;
         }
 
         input[type="checkbox"]:before {
@@ -300,13 +335,13 @@ body {
        p {
            color: rgb(105, 102, 102);
            margin-left: 10px;
-           margin-bottom: 10px;
+           margin-top: 10px;
        }
     }
     
 
     .submit-form {
-        font-size: 17px;
+        font-size: 20px;
         padding: 0 30px;
         height: 50px;
         border-radius: 10px;
@@ -314,15 +349,16 @@ body {
         margin-bottom: 37px;
         cursor: pointer;
         width: 200px;
-        background-color: rgb(236, 236, 25);
+        background-color: #2682af;
         transition: 0.2s ease-in-out;
+        color: white;
 
         &:hover {
-            background-color: rgb(248, 248, 83)
+            background-color: #2B92C7;
         }
-
+    
         &:active {
-            background: rgb(204, 204, 29);
+            background-color: #1e6f97;
         }
     }
 }
@@ -332,6 +368,8 @@ body {
     margin-bottom: 50px;
     
     &-title {
+        font-weight: 800;
+        font-family: colibri-regular;
         margin-bottom: 40px;
     }
 
@@ -347,6 +385,11 @@ body {
             padding-bottom: 10px;
             padding-top: 0;
             border-bottom: 1px solid rgb(187, 184, 184); 
+
+            h4 {
+                font-weight: 800;
+                font-family: colibri-regular;
+            }
 
             .locker1 {
                 opacity: 0;
@@ -374,7 +417,7 @@ body {
     height: 120px;
     color: white;
     margin: auto;
-    background-color: #302e2e;
+    background-color: #1b3f63;
     border-radius: 60px 60px 0 0;
     width: 100%;
     padding-top: 40px;
